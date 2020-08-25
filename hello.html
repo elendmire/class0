@@ -3,6 +3,33 @@
 <html>
     <head>
         <title>My Webpage!</title>
+        <!--
+            bunu yapacağımıza aşağıdaki şekilde yapmak daha kolay ve mantıklı bir kodlama olur.
+                th{
+                border: 1px solid black;
+            }
+            td{
+                border: 1px solid black;
+            
+                -----------------
+            Ayrıca border collepse border içindeki borderlerın birbi içine girmesini yani düzgün bir tablo 
+            görünümünü almasını sağlar.
+            }-->
+        <style>
+            table{
+                border: 2px solid rgb(139, 124, 124);
+                border-collapse: collapse;
+                width: 30%;
+            }
+            th, td{
+                border: 1px solid black;
+                padding: 5px;
+                text-align: center;
+            }
+            th{
+                background-color: lightgray;
+            }
+        </style>
     </head>
     <body>
         <!--işte sana bir alan demiş oluruz bir form açmakla. burada insanlar sana data vericek diye bildiririz.-->
