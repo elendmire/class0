@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            My Web Page ver.form 
+        </title>
+    </head>
+    <body>
+        <form>
+            <div>
+                <input name="name" type="text" placeholder="İsminizi girin.">
+                <input name="password" type="password" placeholder="Şifrenizi girin.">
+            </div>
+            <div>
+                Favorite color?
+                <input name="color" type="radio" value="red"> Kırmızı
+                <input name="color" type="radio" value="green"> Yeşil
+                <input name="color" type="radio" value="blue"> Mavi
+                <input name="color" type="radio" value="other"> Başka
+            </div>
+            <div>
+                <input name="country" list="countries" placeholder="Şehirler">
+                <datalist id="countries">
+                    <option value="Türkiye">
+                    <option value="ABD">
+                    <option value="England">
+                </datalist>
+            </div>
+        </form>
+    </body>
+</html>
