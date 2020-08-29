@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Web Page!</title>
+        <!--Bu gğnlerde sıklıkla gördüğümüz bu satır cihazlarda görünürlük açısından çok önemlidir.
+        Site, herhangi cihazı kullanıyorsanız onun yatay boyutuna göre kendi kendini ayarlar.-->
+        <meta name="viewport" content="width=device-width , initial-scale=1.0">
+        <!--Örneğin burada 500px den yukardaki değerlerde welcome to my webpage yazmasını, altındaki değerlerde de 
+        yalnızca welcome yazmasını belirtmişiz.-->
+        <style>
+            @media (min-width: 500px){
+                h1::before{
+                    content: "Welcome to my webpage!";
+                }
+            }
+            @media (max-width: 499px){
+                h1::before{
+                    content: "Welcome!";
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <!--Buradaki h1 ile belirttiğimiz yer boş olmasına karşın yukarıda media kısmında hangi boyutlarda (min/max ile belirtilir) 
+        ne şekilde olacağına bir bidirge yaparız.-->
+        <h1></h1>
+    </body>
+</html>
