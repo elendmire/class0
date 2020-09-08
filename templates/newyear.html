@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Is It New Year?
+        </title>
+        <style>
+            body{
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                -moz-transform: translateX(-50%) translateY(-50%);
+                -webkit-transform: translateX(-50%) translateY(-50%);
+                transform: translateX(-50%) translateY(-50%);
+            }
+        </style>
+    </head>
+    <body>
+        <!--jinja 2 ways of rendering page-->
+        {% if new_year %}
+            <h1>Yes! Happy New Year!</h1>
+        {% else %}
+            <h1>NO.</h1>
+        {% endif %}
+    </body>
+</html>
