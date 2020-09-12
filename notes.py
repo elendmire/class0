@@ -15,6 +15,6 @@ def index():
         note = request.form.get("note")
         session["notes"].append(note)
     
-    return render_template("notesindex.html", notes=session["notes"])
+    return render_template("index.html", notes=session["notes"])
 
 

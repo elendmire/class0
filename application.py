@@ -15,12 +15,12 @@ def index():
 @app.route("/headline")
 def headline():
     headline = "Hello World???"
-    return render_template("index.html", headline=headline)
+    return render_template("index1.html", headline=headline)
 
 @app.route("/bye")
 def bye():
     headline = "Goodbye!"
-    return render_template("index.html", headline=headline)
+    return render_template("index1.html", headline=headline)
 
 #route adı üstünde sayfa üzerinde gezinebileceğimiz url ve iç sayfaları oluşturuyor. örneğin burada url 
 #yanına faruk gelirse sayfada selamlar faruk yazması gerekiyor.
