@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            //Counter isminde bir veriable tanımladık ve değerini de 0 yaptık.
+            let counter = 0;
+            function count(){
+                counter++;
+                document.querySelector('#counter').innerHTML = counter;
+            }
+        </script>
+        <title>
+            My Website!
+        </title>
+    </head>
+    <body>
+        <h1 id="counter">0</h1>
+        <button onclick="count()">Click Here.</button>
+    </body>
+</html>
