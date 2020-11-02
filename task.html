@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+
+            // By default, submit button is disabled
+            //When we write down something on blank space it will be enable
+            document.querySelector('#submit').disabled = true;
+
+            // Enable button only if there is text in the input field
+            //The onkeyup event occurs when the user releases a key (on the keyboard).
+            document.querySelector('#task').onkeyup = () => {
+                if (document.querySelector('#task').value.length > 0)
+                //0 karakterden çok karakter olursa boşluğumda o zaman submit butonumun çalışmasını isterim.
+                    document.querySelector('#submit').disabled = false;
+                else
+                //eğer 0 karakter varsa submit butonumu kapat.
+                    document.querySelector('#submit').disabled = true;
+            };
+
+            document.querySelector('#new-task').onsubmit = () => {
+
+                // Create new item for list
+                const li = document.createElement('li');
+                li.innerHTML = document.querySelector('#task').value;
+
+                // Add new item to task list
+                document.querySelector('#tasks').append(li);
+
+                // Clear input field and disable button again
+                document.querySelector('#task').value = '';
+                document.querySelector('#submit').disabled = true;
+
+                // Stop form from submitting
+                return false;
+            };
+
+        });
+    </script>
+    <title>Tasks</title>
+</head>
+
+<body>
+    <h1>Tasks</h1>
+    <ul id="tasks">
+    </ul>
+    <form id="new-task">
+        <input id="task" autocomplete="off" autofocus placeholder="New Task" type="text">
+        <input id="submit" type="submit">
+    </form>
+</body>
+
+</html>
