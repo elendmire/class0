@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html {
   font-size: 42px;
   background-image: url(./bcgrnd.jpg);
@@ -20,10 +21,11 @@ body {
 }
 
 h1 {
+  /* Hi there text */
   position: absolute;
   width: 374px;
   height: 126px;
-  left: 535px;
+  left: 553px;
   top: 203px;
   font-family: Overpass;
   font-style: italic;
@@ -64,5 +66,97 @@ p {
   /* identical to box height */
   letter-spacing: -0.08em;
   color: #FFFFFF;
+}
+
+a.things {
+  position: absolute;
+  width: 100px;
+  height: 58px;
+  left: 387px;
+  top: 586px;
+  font-family: Palanquin Dark;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 32px;
+  line-height: 58px;
+  /* identical to box height */
+  letter-spacing: -0.08em;
+  text-transform: uppercase;
+  color: #FFE350;
+}
+
+a.art {
+  position: absolute;
+  width: 55px;
+  height: 58px;
+  left: 552px;
+  top: 586px;
+  font-family: Palanquin Dark;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 32px;
+  line-height: 58px;
+  /* identical to box height */
+  letter-spacing: -0.08em;
+  text-transform: uppercase;
+  color: #FFE350;
+}
+
+a.blog {
+  /* blog */
+  position: absolute;
+  width: 76px;
+  height: 58px;
+  left: 672px;
+  top: 586px;
+  font-family: Palanquin Dark;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 32px;
+  line-height: 58px;
+  /* identical to box height */
+  letter-spacing: -0.08em;
+  text-transform: uppercase;
+  color: #FFE350;
+}
+
+a.info {
+  /* ınfo */
+  position: absolute;
+  width: 66px;
+  height: 58px;
+  left: 813px;
+  top: 586px;
+  font-family: Palanquin Dark;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 32px;
+  line-height: 58px;
+  /* identical to box height */
+  letter-spacing: -0.08em;
+  text-transform: uppercase;
+  color: #FFE350;
+}
+
+a.more {
+  /* more */
+  position: absolute;
+  width: 80px;
+  height: 58px;
+  left: 944px;
+  top: 586px;
+  font-family: Palanquin Dark;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 32px;
+  line-height: 58px;
+  /* identical to box height */
+  letter-spacing: -0.08em;
+  text-transform: uppercase;
+  color: #FFE350;
+}
+
+a {
+  text-decoration: none;
 }
 /*# sourceMappingURL=style.css.map */
